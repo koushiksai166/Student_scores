@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Scores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Scores</h1>
+        
+        <div class="filter-section">
+            <label for="subject">Select Subject: </label>
+            <select id="subject">
+                <option value="English">English</option>
+                <option value="Maths">Maths</option>
+                <option value="Science">Science</option>
+                <option value="Social Science">Social Science</option>
+            </select><br><br>
+
+            <input type="radio" name="filterType" id="above" value="above" checked> <label for="above">Above</label>
+            <input type="radio" name="filterType" id="below" value="below"> <label for="below">Below</label>
+            <input type="radio" name="filterType" id="between" value="between"> <label for="between">Between</label>
+            <br><br>
+
+            <input type="text" id="value" placeholder="Value"><br><br>
+
+            <button id="filterBtn">Filter</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>English</th>
+                    <th>Maths</th>
+                    <th>Science</th>
+                    <th>Social Science</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Lokesh</td>
+                    <td>50</td>
+                    <td>86</td>
+                    <td>77</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Venkat Ramana</td>
+                    <td>75</td>
+                    <td>96</td>
+                    <td>67</td>
+                    <td>91</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sarvan</td>
+                    <td>90</td>
+                    <td>35</td>
+                    <td>86</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Uday</td>
+                    <td>79</td>
+                    <td>68</td>
+                    <td>77</td>
+                    <td>68</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Koushik</td>
+                    <td>80</td>
+                    <td>85</td>
+                    <td>96</td>
+                    <td>68</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
